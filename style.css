@@ -7,9 +7,11 @@ html, body {
 
   width: 100%;
   height: 100%;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   margin: 0;
   line-height: 1.4;}
+
+p{font-family: 'Roboto Slab', serif;}
 
 #navigation{
   background-color: rgb(40,44,52);
@@ -106,6 +108,12 @@ display: block;}
 
 .col {margin-bottom: 4%;}
 
+.col{
+float: left;
+width: 46%;
+margin-left: 2%;
+margin-right: 2%;}
+
 .formular input{width: 100%;
   height: 2em;
   padding-right: 4em;
@@ -126,21 +134,75 @@ border-bottom: 1px dotted black;
 padding-bottom: 1em;
 margin-bottom: 1em}
 
+footer {
+clear: both;
+background-color: rgb(40,44,52);
+width: 100%;
+min-height:200px;}
+
+footer li {list-style: none;}
+
+footer li a {color: white;
+text-decoration: none;}
+
+#social-menu li{
+float: left;
+margin-left: 1em;}
+
+footer {padding: 2em;
+text-align: center;}
+
+#footer-menu{padding: 0}
+
+#social-menu {display: inline-block;
+padding: 0}
+
+#menu {position:absolute;
+top: 60px;
+left: 0;
+z-index: 2;
+width: 100%;
+display: none;}
+
+#menu.show {display: block;}
 
 @media (min-width:768px) {
 #burger{display: none;}
 
-#menu {float: right;}
+#menu {float: right;
+width: auto;
+display: block;}
+
 nav li{float: left;}
 
-.hero-text h1{font-size: 3em;
-}
+.hero-text h1{font-size: 3em;}
 
 #rezepte {width: 66.666667%;
 float: left;}
 
 #sidebar {width: 33.333333%;
 float: left;}
+
+
+.wrapper {position: relative;
+min-height: 200px;}
+
+#footer-menu {position: absolute;
+top: 50%;
+margin: 0;
+padding: 0;
+transform: translateY(-50%);}
+
+#footer-menu li{float: left;
+float: left;
+margin-right: 1em;}
+
+#social-menu {position: absolute;
+top: 50%;
+margin: 0;
+padding: 0;
+transform: translateY(-50%);
+}
 
 .author img{
 border-radius: 50%;
@@ -152,15 +214,7 @@ width: 50% !important;}
 
 #sidebar h2 {text-transform: uppercase;}
 
-.author {border-bottom: 1px dotted black;}
+.author {border-bottom: 1px dotted black;
 }
 
-#footer {background-color: black;
-float: left;
-position: relative;}
-
-.col{
-float: left;
-width: 46%;
-margin-left: 2%;
-margin-right: 2%;}
+}
