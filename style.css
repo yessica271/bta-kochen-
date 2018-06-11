@@ -1,0 +1,166 @@
+* {
+box-sizing: border-box;
+}
+/* This is your comment */
+
+html, body {
+
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  line-height: 1.4;}
+
+#navigation{
+  background-color: rgb(40,44,52);
+  height: 60px;}
+
+.wrapper{
+    width: 90%;
+    margin: auto;}
+
+#navigation a{
+      color: rgb(255,255,255);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: 0.5s color linear;}
+
+#navigation a:hover{ color: rgb(69,139,116);}
+
+nav li{
+  float: left;
+  list-style: none;
+  margin-left: 2em;}
+
+#menu {background-color: rgb(40,44,52);}
+
+#logo {margin-top: 10px;}
+
+  #burger {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  float: right;
+  margin-top: 14px;
+  padding: 0;}
+
+  #hero {width: 100%;
+  height: 100%;
+  background-image: url(img/intro.jpg);
+  background-size: cover;
+  background-positon: center;
+  position: relative;
+  }
+
+  .hero-text{
+   position: absolute;
+   top: 50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   text-align: center;
+
+ }
+   .button {
+    background: rgb(102,205,170);
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    border style: solid;
+    border-width: 1px;
+    border color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 2em;
+    transition: 0.5s background linear;
+
+
+}
+  .button:hover {background: rgb( 69,139,116);}
+
+#rezepte h2 {
+ text-transform: uppercase;
+ front-size: 2em;}
+
+#rezepte img,#sidebar img {width: 100%;}
+
+.col img {border-radius: 4px 4px 0 0;
+display: block;}
+
+.text-rezept {
+border-left: 1px solid black;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+border-radius: 0 0 4px 4px;
+text-align: center;
+padding: 1em;}
+
+
+.col h3{ margin: 0;}
+
+.rezepte{ margin: 0;
+display: block;}
+
+.col {margin-bottom: 4%;}
+
+.formular input{width: 100%;
+  height: 2em;
+  padding-right: 4em;
+  border: 1px solid #000;
+  padding-left: .5em;}
+
+.formular button {position: absolute;
+right: 0%;
+top: 0%;
+background-color: transparent;
+border: none;
+font-size: 1.2em;
+line-height: 1.5em;
+padding: none;}
+
+.formular {position: relative;
+border-bottom: 1px dotted black;
+padding-bottom: 1em;
+margin-bottom: 1em}
+
+
+@media (min-width:768px) {
+#burger{display: none;}
+
+#menu {float: right;}
+nav li{float: left;}
+
+.hero-text h1{font-size: 3em;
+}
+
+#rezepte {width: 66.666667%;
+float: left;}
+
+#sidebar {width: 33.333333%;
+float: left;}
+
+.author img{
+border-radius: 50%;
+width: 50% !important;}
+
+#sidebar {text-align: center;}
+
+#sidebar img{ width: 50%;}
+
+#sidebar h2 {text-transform: uppercase;}
+
+.author {border-bottom: 1px dotted black;}
+}
+
+#footer {background-color: black;
+float: left;
+position: relative;}
+
+.col{
+float: left;
+width: 46%;
+margin-left: 2%;
+margin-right: 2%;}
